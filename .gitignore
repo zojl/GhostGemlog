@@ -1,0 +1,5 @@
+.env
+logs/*
+data/blog/posts.json
+data/blog/contents
+data/cert/*
