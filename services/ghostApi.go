@@ -131,7 +131,7 @@ func parseGhostItem(posts []models.GhostItem) (string, error) {
 }
 
 func getFromApi(method string) ([]byte, error) {
-    url := config.BlogHost + "/ghost/api/content/" + method + "?page=2&key=" + config.BlogKey
+    url := config.BlogHost + "/ghost/api/content/" + method + "?key=" + config.BlogKey
     resp, err := http.Get(url)
     if err != nil {
         return nil, err
